@@ -18,7 +18,7 @@ public class ConfigWrapper {
     public static void setup() {
         file = new File(Bukkit.getServer().getPluginManager().getPlugin("ServerProMsgRemover").getDataFolder(), "blacklist.yml");
  
-        if (!file.exists()){
+        if (!file.exists()) {
             try{
                 file.createNewFile();
             }catch (IOException e) {}
@@ -26,11 +26,11 @@ public class ConfigWrapper {
         customFile = YamlConfiguration.loadConfiguration(file);
     }
  
-    public static FileConfiguration get(){
+    public static FileConfiguration get() {
         return customFile;
     }
  
-    public static void save(){
+    public static void save() {
         try{
             customFile.save(file);
         }catch (IOException e){
@@ -38,7 +38,7 @@ public class ConfigWrapper {
         }
     }
  
-    public static void reload(){
+    public static void reload() {
         customFile = YamlConfiguration.loadConfiguration(file);
     }
     
