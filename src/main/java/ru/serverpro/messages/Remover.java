@@ -21,30 +21,34 @@ public class Remover extends JavaPlugin {
         List<String> list = new ArrayList<>();
         list.add("server.pro");
         for (int i = 0; i < 10; i++) {
-        	list.add("§" + i + "server" + "§" + i + ".pro");
+        	list.add("Â§" + i + "server" + "Â§" + i + ".pro");
 		}
-        list.add("§cserver§c.pro");
-        list.add("§aserver§a.pro");
-        list.add("§eserver§e.pro");
-        list.add("§bserver§b.pro");
-        list.add("§dserver§d.pro");
-        list.add("§lserver§l.pro");
-        list.add("§rserver§r.pro");
+        list.add("Â§cserverÂ§c.pro");
+        list.add("Â§aserverÂ§a.pro");
+        list.add("Â§eserverÂ§e.pro");
+        list.add("Â§bserverÂ§b.pro");
+        list.add("Â§dserverÂ§d.pro");
+        list.add("Â§lserverÂ§l.pro");
+        list.add("Â§rserverÂ§r.pro");
         
         list.add("Server.pro");
         for (int i = 0; i < 10; i++) {
-        	list.add("§" + i + "Server" + "§" + i + ".pro");
+        	list.add("Â§" + i + "Server" + "Â§" + i + ".pro");
 		}
-        list.add("§cServer§c.pro");
-        list.add("§aServer§a.pro");
-        list.add("§eServer§e.pro");
-        list.add("§bServer§b.pro");
-        list.add("§dServer§d.pro");
-        list.add("§lServer§l.pro");
-        list.add("§rServer§r.pro");
+        list.add("Â§cServerÂ§c.pro");
+        list.add("Â§aServerÂ§a.pro");
+        list.add("Â§eServerÂ§e.pro");
+        list.add("Â§bServerÂ§b.pro");
+        list.add("Â§dServerÂ§d.pro");
+        list.add("Â§lServerÂ§l.pro");
+        list.add("Â§rServerÂ§r.pro");
+	for (int i = 0; i < 10; i++) {
+        	list.add("Â§" + i + "Server Â§" + i + "will Â§" + i + "expire Â§" + i + "in");
+		}
+		
         Collections.sort(list);
-
         ConfigWrapper.get().set("blacklisted", list);
+		
         ConfigWrapper.get().options().copyDefaults(true);
         ConfigWrapper.save();
         
