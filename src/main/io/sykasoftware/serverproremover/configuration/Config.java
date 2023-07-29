@@ -26,7 +26,7 @@ public class Config
 
     public boolean isBlockCommand()
     {
-        return this.config.getBoolean("blockCommand", true); // значение true используется по умолчанию
+        return this.config.getBoolean("blockCommand", true);
     }
 
     public void setBlockCommand(boolean value) throws IOException
